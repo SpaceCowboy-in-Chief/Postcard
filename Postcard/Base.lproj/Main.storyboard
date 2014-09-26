@@ -65,7 +65,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="23" y="172" width="274" height="30"/>
+                                    <rect key="frame" x="23" y="73" width="274" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fta-k7-aee">
@@ -73,7 +73,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="23" y="223" width="274" height="30"/>
+                                    <rect key="frame" x="23" y="124" width="274" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONT-a6-L9q">
@@ -83,27 +83,36 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="58" y="269" width="204" height="30"/>
+                                    <rect key="frame" x="58" y="170" width="204" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Tr-Fs-7ak"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5aC-3G-HeL">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="207" y="223" width="97" height="71"/>
+                                </variation>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aak-ub-MRQ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="243" width="42" height="21"/>
+                                </variation>
+                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEf-q0-GOn">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="23" y="72" width="186" height="25"/>
+                                    <rect key="frame" x="23" y="272" width="186" height="25"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5aC-3G-HeL">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="172" y="72" width="132" height="76"/>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -111,8 +120,9 @@
                                 <exclude reference="nHd-Qt-ZfJ"/>
                                 <exclude reference="Fta-k7-aee"/>
                                 <exclude reference="ONT-a6-L9q"/>
-                                <exclude reference="fEf-q0-GOn"/>
                                 <exclude reference="5aC-3G-HeL"/>
+                                <exclude reference="aak-ub-MRQ"/>
+                                <exclude reference="fEf-q0-GOn"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -120,8 +130,9 @@
                                 <include reference="nHd-Qt-ZfJ"/>
                                 <include reference="Fta-k7-aee"/>
                                 <include reference="ONT-a6-L9q"/>
-                                <include reference="fEf-q0-GOn"/>
                                 <include reference="5aC-3G-HeL"/>
+                                <include reference="aak-ub-MRQ"/>
+                                <include reference="fEf-q0-GOn"/>
                             </mask>
                         </variation>
                     </view>
@@ -132,6 +143,7 @@
                         <outlet property="enterNameTextField" destination="nHd-Qt-ZfJ" id="gmL-tZ-7KF"/>
                         <outlet property="mailButton" destination="ONT-a6-L9q" id="xse-C9-JkX"/>
                         <outlet property="messageLabel" destination="fEf-q0-GOn" id="PkM-qt-Xrc"/>
+                        <outlet property="nameLabel" destination="aak-ub-MRQ" id="HSe-Aa-gtX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

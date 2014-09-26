@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     
     @IBOutlet weak var enterNameTextField: UITextField!
@@ -32,6 +34,10 @@ class ViewController: UIViewController {
         //code will evaluate when we press the button
         messageLabel.hidden = false
         messageLabel.text = enterMessageTextField.text
+        
+        nameLabel.hidden = false
+        nameLabel.text = enterNameTextField.text
+        nameLabel.textColor = UIColor.blueColor()
         
         enterMessageTextField.text = ""
         
